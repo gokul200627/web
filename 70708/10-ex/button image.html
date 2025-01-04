@@ -1,0 +1,43 @@
+<html> 
+<head> 
+ <style> 
+#image  
+{ 
+            display: none; 
+} 
+ #image1  
+{ 
+            display: none; 
+} 
+ #image2 
+{ 
+            display: none; 
+} 
+    </style> 
+</head> 
+<body background="image0.avif"> 
+<div><img id="image" src="cat.jpeg"/></div> 
+<button type="button"onclick="show()" id="btnID">Show Image1</button> 
+<div><img id="image1" src="river.jpg"/></div> 
+<button type="button"onclick="show1()" id="btnID1">Show Image2</button> 
+<div><img id="image2" src="moon.webp"/></div> 
+<button type="button"onclick="show2()" id="btnID2">Show Image3</button> 
+<script> 
+function show()  
+{ 
+document.getElementById('image').style.display = "block"; 
+ document.getElementById('btnID').style.display = "none"; 
+ } 
+function show1()  
+{ 
+document.getElementById('image1').style.display = "block"; 
+ document.getElementById('btnID1').style.display = "none"; 
+} 
+function show2()  
+{ 
+document.getElementById('image2').style.display = "block"; 
+ document.getElementById('btnID2').style.display = "none"; 
+ } 
+</script> 
+</body> 
+ </html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello Everyone, I am Gopal</title>
+    <script language="JavaScript">
+        var count = 0;
+        var delay = 250;  
+        var text = "WELCOME TO CHENNAI"; 
+
+        function scroll() {
+           
+            document.title = text.substring(count, text.length) + text.substring(0, count); 
+
+            if (count < text.length) {
+                count++;
+            } else {
+                count = 0;
+            }
+
+            
+            setTimeout(scroll, delay);
+        }
+    </script>
+</head>
+<body onload="scroll()">
+</body>
+</html>

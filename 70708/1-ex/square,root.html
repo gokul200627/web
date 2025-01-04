@@ -1,0 +1,17 @@
+<html>
+<body>
+<script language="javascript">
+var i;
+var inp = parseInt(prompt("Enter the end range value", "10"));
+document.write("<table> <tr> <th>no&nbsp;&nbsp;</th><th>Square&nbsp;&nbsp;</th><th>Square root&nbsp;&nbsp;</th><th>Cube&nbsp;&nbsp;</th><th>Complement&nbsp;&nbsp;</th></tr>");
+for (i = 1; i <= inp; i++) {
+    var sq = i * i;
+    var srt = Math.round(Math.sqrt(i)); // Corrected Math object
+    var cu = i * i * i;
+    var comp = -i;
+    document.write("<tr><td>" + i + "</td><td>" + sq + "</td><td>" + srt + "</td><td>" + cu + "</td><td>" + comp + "</td></tr>");
+}
+document.write("</table>");
+</script>
+</body>
+</html>

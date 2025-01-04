@@ -1,0 +1,26 @@
+<html>
+<body>
+   <script language="javascript">
+    var n;
+    var list = new Array(15);
+
+    n = parseInt(prompt("Enter the number of values"));
+
+    document.writeln("Given List <br><br>");
+    for (var i = 0; i < n; i++) {
+        list[i] = prompt("Enter the value of " + (i + 1));  
+        list[i] = parseFloat(list[i]); 
+        document.writeln(list[i] + "<br>");
+    }
+
+    list.sort(function(a, b) {
+        return a - b; 
+    });
+
+    document.writeln("<br><br>Sorted List <br><br>");
+    for (i = 0; i < n; i++) {
+        document.writeln(list[i] + "<br>");
+    }
+   </script>
+</body>
+</html>

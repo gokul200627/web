@@ -1,0 +1,27 @@
+<html> 
+<head> 
+<script language="Javascript"> 
+function bigImg(x) 
+{ 
+x.style.height="120px"; 
+x.style.width="120px"; 
+} 
+function normalImg(x) 
+{ 
+x.style.height="32px"; 
+x.style.width="32px"; 
+} 
+function doubleclk(x) 
+{ 
+x.style.height="200px"; 
+x.style.width="200px"; 
+} 
+</script> 
+</head> 
+<body> 
+<center> 
+<img src="cat.jpeg" onmouseover="bigImg(this)" onmouseout="normalImg(this)" 
+ondblclick="doubleclk(this)" border="0" width="32" height="32";> 
+</center> 
+</body> 
+</html>
